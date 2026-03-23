@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Outputs (results are gitignored; commit only summaries you explicitly choose to)
+outputs/
+
+# Environment / secrets
+.env
+*.env
+llm-eval/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Model weights (never commit these)
+*.bin
+*.safetensors
+*.gguf
+*.ggml
