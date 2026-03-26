@@ -1,0 +1,12 @@
+Summarize the following text in approximately {target_words} words.
+
+Requirements:
+- Be factually faithful — do not add, infer, or embellish any information.
+- Preserve key entities, numbers, dates, and causal relationships.
+- Use clear, neutral, and professional language.
+- Do NOT begin with phrases like "The text discusses" or "This article is about".
+
+TEXT:
+{text}
+
+SUMMARY:

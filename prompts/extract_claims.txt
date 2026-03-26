@@ -1,0 +1,14 @@
+Extract every distinct, atomic, verifiable factual claim from the text below.
+
+Rules:
+- Each claim must be a single, self-contained statement of fact.
+- Do NOT merge multiple facts into one claim.
+- Do NOT invent or infer facts not explicitly stated.
+- Do NOT include opinions, predictions, or hedged statements.
+- Do NOT include meta-commentary like "The text says..." — just the claim itself.
+- Output ONLY a JSON array of strings. No preamble, no markdown fences.
+
+TEXT:
+{text}
+
+OUTPUT (JSON array only):

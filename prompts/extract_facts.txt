@@ -1,0 +1,14 @@
+Extract all important, verifiable facts from the source text below.
+These facts will serve as the ground-truth reference set for evaluating summaries.
+
+Rules:
+- One atomic fact per entry.
+- Cover: named entities, quantities, dates, locations, roles, causal relationships, outcomes.
+- Do NOT include opinions, speculation, or unverifiable assertions.
+- Do NOT paraphrase loosely — stay faithful to the source wording.
+- Output ONLY a JSON array of strings. No preamble, no markdown fences.
+
+SOURCE TEXT:
+{text}
+
+OUTPUT (JSON array only):
