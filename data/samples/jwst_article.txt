@@ -1,0 +1,9 @@
+The James Webb Space Telescope (JWST), launched on December 25, 2021, is the largest and most powerful space telescope ever built. It was developed jointly by NASA, the European Space Agency (ESA), and the Canadian Space Agency (CSA), at a total cost of approximately $10 billion over a development period spanning more than 20 years.
+
+Unlike its predecessor, the Hubble Space Telescope, which primarily observes in visible and ultraviolet light, JWST is optimized for infrared astronomy. This capability allows it to peer through dust clouds that obscure visible light, observe the formation of the first stars and galaxies that appeared less than 400 million years after the Big Bang, and study the atmospheres of exoplanets for signs of habitability.
+
+JWST operates from the second Lagrange point (L2), approximately 1.5 million kilometers from Earth — four times farther than the Moon. At this location, the telescope orbits the Sun in sync with Earth, which allows its massive sunshield — the size of a tennis court — to permanently block heat from the Sun, Earth, and Moon, keeping the telescope's instruments at an operating temperature of around −233°C (40 Kelvin).
+
+The telescope's primary mirror consists of 18 hexagonal gold-coated beryllium segments with a combined diameter of 6.5 meters, compared to Hubble's 2.4-meter mirror. This gives JWST roughly six times the light-collecting area of Hubble.
+
+In its first year of science operations, JWST produced images of galaxy cluster SMACS 0723 that represent the deepest and sharpest infrared image of the distant universe ever captured. It also conducted the first-ever direct detection of carbon dioxide in the atmosphere of exoplanet WASP-39b, a finding with significant implications for the study of planetary atmospheres beyond our solar system.
