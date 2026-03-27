@@ -1,0 +1,38 @@
+# configs/benchmark.yaml
+# Multi-model benchmark config.
+# Add/remove entries in `models` to control which models are compared.
+
+models:
+  - provider: ollama
+    model_name: "llama3.1:8b-instruct-q4_K_M"
+  - provider: ollama
+    model_name: "mistral:7b-instruct"
+  - provider: openai
+    model_name: "gpt-4o-mini"
+  - provider: anthropic
+    model_name: "claude-3-5-haiku-20241022"
+
+# Extractor is shared across all models to keep extraction consistent.
+extractor:
+  provider: ollama
+  model_name: "llama3.1:8b-instruct-q4_K_M"
+  temperature: 0.1
+  max_tokens: 1024
+
+verifier:
+  backend: transformers
+  model_name: "facebook/bart-large-mnli"
+  device: cpu
+
+prompts:
+  summarize:      "prompts/summarize.txt"
+  extract_claims: "prompts/extract_claims.txt"
+  extract_facts:  "prompts/extract_facts.txt"
+
+evaluation:
+  n_runs: 3       # run each model 3 times to measure stability
+  target_words: 150
+
+output:
+  dir: "outputs"
+  save_source: false
