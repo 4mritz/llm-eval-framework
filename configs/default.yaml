@@ -1,0 +1,34 @@
+# configs/default.yaml
+# Single-model evaluation config.
+# Override any field via CLI or by creating a custom config that imports this one.
+
+llm:
+  provider: ollama
+  model_name: "llama3.1:8b-instruct-q4_K_M"
+  temperature: 0.3
+  max_tokens: 512
+
+# Extractor can be a different (cheaper/faster) model from the summarizer.
+extractor:
+  provider: ollama
+  model_name: "llama3.1:8b-instruct-q4_K_M"
+  temperature: 0.1
+  max_tokens: 1024
+
+verifier:
+  backend: transformers                 # "transformers" (fast) | "llm" (flexible)
+  model_name: "facebook/bart-large-mnli"
+  device: cpu                           # "cpu" | "cuda" | "mps"
+
+prompts:
+  summarize:      "prompts/summarize.txt"
+  extract_claims: "prompts/extract_claims.txt"
+  extract_facts:  "prompts/extract_facts.txt"
+
+evaluation:
+  n_runs: 1
+  target_words: 150
+
+output:
+  dir: "outputs"
+  save_source: false                    # include full source_text in result JSON
